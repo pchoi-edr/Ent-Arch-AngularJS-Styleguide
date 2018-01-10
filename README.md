@@ -25,17 +25,6 @@ In AngularJS's GitHub wiki there is a similar section by [ProLoser](https://gith
 
 # 
 
-# Modules
-
-* Modules should be named with lowerCamelCase. For indicating that module `b` is submodule of module `a` you can nest them by using namespacing like: `a.b`.
-
-  There are two common ways for structuring the modules:
-
-  1. By functionality
-  2. By component type
-
-     Currently there's not a big difference, but the first way looks cleaner. Also, if lazy-loading modules is implemented \(currently not in the AngularJS roadmap\), it will improve the app's performance.
-
 # Controllers
 
 * Do not manipulate DOM in your controllers, this will make your controllers harder for testing and will violate the [Separation of Concerns principle](https://en.wikipedia.org/wiki/Separation_of_concerns). Use directives instead.
@@ -514,6 +503,7 @@ File structure:
   * Make the computations in `$watch` as simple as possible. Making heavy and slow computations in a single `$watch` will slow down the whole application \(the `$digest` loop is done in a single thread because of the single-threaded nature of JavaScript\).
 
   * When watching collections, do not watch them deeply when not strongly required. Better use `$watchCollection`, which performs a shallow check for equality of the result of the watched expression and the previous value of the expression's evaluation.
+
   * Set third parameter in `$timeout` function to false to skip the `$digest` loop when no watched variables are impacted by the invocation of the `$timeout` callback function.
   * When dealing with big collections, which change rarely, [use immutable data structures](http://blog.mgechev.com/2015/03/02/immutability-in-angularjs-immutablejs).
 
