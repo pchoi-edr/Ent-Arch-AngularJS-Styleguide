@@ -21,10 +21,6 @@ In this style guide you won't find common guidelines for JavaScript development.
 
 For AngularJS development recommended is the [Google's JavaScript style guide](https://google.github.io/styleguide/javascriptguide.xml).
 
-In AngularJS's GitHub wiki there is a similar section by [ProLoser](https://github.com/ProLoser), you can check it [here](https://github.com/angular/angular.js/wiki).
-
-
-
 # 
 
 
