@@ -1,5 +1,57 @@
 # Controllers
 
+> **Bad:**
+```javascript
+
+var app = angular.module('app', []);
+app.controller('MyCtrl', function () {
+
+});
+
+```
+
+> **Good:**
+```javascript
+
+function MainCtrl () {
+
+}
+angular
+  .module('app', [])
+  .controller('MainCtrl', MainCtrl);
+
+```
+
+> **Best:**
+```javascript
+
+(function () {
+  angular.module('app', []);
+
+  // MainCtrl.js
+  function MainCtrl () {
+
+  }
+
+  angular
+    .module('app')
+    .controller('MainCtrl', MainCtrl);
+
+  // AnotherCtrl.js
+  function AnotherCtrl () {
+
+  }
+
+  angular
+    .module('app')
+    .controller('AnotherCtrl', AnotherCtrl);
+
+  // and so on...
+
+})();
+
+```
+
 * Do not manipulate DOM in your controllers, this will make your controllers harder for testing and will violate the [Separation of Concerns principle](https://en.wikipedia.org/wiki/Separation_of_concerns). Use directives instead.
 * The naming of the controller is done using the controller's functionality \(for example shopping cart, homepage, admin panel\) and the substring `Ctrl` in the end.
 * Controllers are plain javascript [constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor), so they will be named UpperCamelCase \(`HomePageCtrl`, `ShoppingCartCtrl`, `AdminPanelCtrl`, etc.\).
