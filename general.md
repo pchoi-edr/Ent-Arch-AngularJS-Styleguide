@@ -1,4 +1,4 @@
-# General
+# General {#general}
 
 ## Directory structure
 
@@ -230,6 +230,7 @@ This will make your testing easier and in some cases prevent unexpected behaviou
 * Use an AngularJS pre-minifier \([ng-annotate](https://github.com/olov/ng-annotate)\) for preventing problems after minification.
 
 * Don't use globals. Resolve all dependencies using Dependency Injection, this will prevent bugs and monkey patching when testing.
+
 * Avoid globals by using Grunt/Gulp to wrap your code in Immediately Invoked Function Expression \(IIFE\). You can use plugins like [grunt-wrap](https://www.npmjs.com/package/grunt-wrap) or [gulp-wrap](https://www.npmjs.com/package/gulp-wrap/) for this purpose. Example \(using Gulp\)
 
   ```Javascript
@@ -250,6 +251,7 @@ This will make your testing easier and in some cases prevent unexpected behaviou
 * Do not use `$` prefix for the names of variables, properties and methods. This prefix is reserved for AngularJS usage.
 
 * Do not use `JQUERY` inside your app, If you must, use `JQLite` instead with `angular.element`.
+
 * When resolving dependencies through the DI mechanism of AngularJS, sort the dependencies by their type - the built-in AngularJS dependencies should be first, followed by your custom ones:
 
 ```javascript
