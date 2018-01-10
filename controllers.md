@@ -2,32 +2,27 @@
 
 > **Bad:**
 
-```javascript
-
+```js
 var app = angular.module('app', []);
 app.controller('MyCtrl', function () {
 
 });
-
 ```
 
 > **Good:**
 
-```javascript
-
+```js
 function MainCtrl () {
 
 }
 angular
   .module('app', [])
   .controller('MainCtrl', MainCtrl);
-
 ```
 
 > **Best:**
 
-```javascript
-
+```js
 (function () {
   angular.module('app', []);
 
@@ -52,7 +47,6 @@ angular
   // and so on...
 
 })();
-
 ```
 
 * Do not manipulate DOM in your controllers, this will make your controllers harder for testing and will violate the [Separation of Concerns principle](https://en.wikipedia.org/wiki/Separation_of_concerns). Use directives instead.
@@ -291,8 +285,6 @@ angular
   ```html
    <div ng-bind="home.bindingValue"></div>
   ```
-
-
 
 
 

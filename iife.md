@@ -5,47 +5,42 @@
 
 > **Bad:**
 
-```javascript
-
+```js
 angular.module('myApp', []);
-
 ```
 
 > **Best:**
 
-```javascript
-
+```js
 (function( window, angular ) {
     'use strict'
 
     angular.module('myApp', []);
 
 })(window, window.angular);
-
 ```
 
 * Strict mode prevents the use of JavaScript hoist
 
 > **Bad:**
 
-```javascript
-
+```js
 newVariable = 6;
 
 newFunction = function() {
 
 }
-
 ```
 
 > **Good:**
 
-```javascript
-
+```js
 var newVariable = 6;
 
 var newFunction = function() {
 
 }
-
 ```
+
+
+

@@ -11,22 +11,20 @@
 
 > **Bad:**
 
-```javascript
-
+```js
 var app = angular.module('app', []);
 app.controller();
 app.factory();
-
 ```
 
 > **Good:**
 
-```javascript
-
+```js
 angular
   .module('app', [])
   .controller()
   .factory();
-
 ```
+
+
 
