@@ -21,3 +21,27 @@ angular.module('myApp', []);
 })(window, window.angular);
 
 ```
+
+* Strict mode prevents the use of JavaScript hoist
+
+> **Bad:**
+```javascript
+
+newVariable = 6;
+
+newFunction = function() {
+
+}
+
+```
+
+> **Good:**
+```javascript
+
+var newVariable = 6;
+
+var newFunction = function() {
+
+}
+
+```
