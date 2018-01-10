@@ -6,12 +6,10 @@
 * [Modules](modules.md)
 * [Controllers](controllers.md)
 * [Directives](directives.md)
-* Models
+* [Models](models.md)
 * [Filters](filters.md)
 * [Services](services.md)
 * [Templates](templates.md)
 * [Routing](routing.md)
 * [Unit Testing](/Unit Testing)
-
-
 
