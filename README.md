@@ -665,7 +665,7 @@ This section includes information about the service component in AngularJS. It i
 
 * Use `ng-bind` or `ng-cloak` instead of simple to prevent flashing content.
 ```html
-{{ }}
+{{ test }}
 ```
 * Avoid writing complex expressions in the templates.
 * When you need to set the `src` of an image dynamically use `ng-src` instead of `src` with `` template.
