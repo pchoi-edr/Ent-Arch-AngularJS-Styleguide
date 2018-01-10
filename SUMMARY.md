@@ -1,17 +1,18 @@
 # Summary
 
-* [Introduction](README.md)
-* [General](general.md)
-* [IIFE](iife.md)
-* [Modules](modules.md)
-* [Controllers](controllers.md)
-* [Directives](directives.md)
-* [Filters](filters.md)
-* [Services](services.md)
-* [Templates](templates.md)
-* [Routing](routing.md)
-* [Unit Testing](/Unit Testing)
-* [E2E Testing](e2e-testing.md)
+[Introduction](README.md)
+
+1. [General](general.md)
+2. [IIFE](iife.md)
+3. [Modules](modules.md)
+4. [Controllers](controllers.md)
+5. [Directives](directives.md)
+6. [Filters](filters.md)
+7. [Services](services.md)
+8. [Templates](templates.md)
+9. [Routing](routing.md)
+10. [Unit Testing](/Unit Testing)
+11. [E2E Testing](e2e-testing.md)
 
 
 
