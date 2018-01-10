@@ -1,6 +1,7 @@
 # Controllers
 
 > **Bad:**
+
 ```javascript
 
 var app = angular.module('app', []);
@@ -11,6 +12,7 @@ app.controller('MyCtrl', function () {
 ```
 
 > **Good:**
+
 ```javascript
 
 function MainCtrl () {
@@ -23,6 +25,7 @@ angular
 ```
 
 > **Best:**
+
 ```javascript
 
 (function () {

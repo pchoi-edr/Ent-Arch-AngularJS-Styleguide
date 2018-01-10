@@ -4,6 +4,7 @@
 * Always, always use `Strict` mode of Javascript
 
 > **Bad:**
+
 ```javascript
 
 angular.module('myApp', []);
@@ -11,6 +12,7 @@ angular.module('myApp', []);
 ```
 
 > **Best:**
+
 ```javascript
 
 (function( window, angular ) {
@@ -25,6 +27,7 @@ angular.module('myApp', []);
 * Strict mode prevents the use of JavaScript hoist
 
 > **Bad:**
+
 ```javascript
 
 newVariable = 6;
@@ -36,6 +39,7 @@ newFunction = function() {
 ```
 
 > **Good:**
+
 ```javascript
 
 var newVariable = 6;

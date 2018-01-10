@@ -10,6 +10,7 @@
      Currently there's not a big difference, but the first way looks cleaner. Also, if lazy-loading modules is implemented \(currently not in the AngularJS roadmap\), it will improve the app's performance.
 
 > **Bad:**
+
 ```javascript
 
 var app = angular.module('app', []);
@@ -19,6 +20,7 @@ app.factory();
 ```
 
 > **Good:**
+
 ```javascript
 
 angular
